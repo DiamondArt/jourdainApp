@@ -57,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _getHomeList() {
     List<Widget> _cards = Provider.of<BaseModel>(context).getCardsWidget(false);
-
     return AnimationLimiter(
       child: ListView.builder(
         shrinkWrap: true,
